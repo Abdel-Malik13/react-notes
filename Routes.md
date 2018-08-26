@@ -1,4 +1,4 @@
-Fonctionnement des routes avec *React Router DOM* :
+Fonctionnement des routes avec **React Router DOM** :
 
 1. Routage de navigation de base
 2. Routage imbriqué
