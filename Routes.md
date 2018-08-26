@@ -1,9 +1,9 @@
 Fonctionnement des routes avec **React Router DOM** :
 
-1. Routage de navigation de base
-2. Routage imbriqué
-3. Routage imbriqué avec des paramètres de chemin
-4. Routage protégé
+* Routage de navigation de base
+* Routage imbriqué
+* Routage imbriqué avec des paramètres de chemin
+* Routage protégé
 
 # React Router basique :
 
