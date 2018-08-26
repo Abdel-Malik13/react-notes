@@ -20,16 +20,16 @@ Ci-dessous un exemple d'une route de base pour une application (sans sous-route)
 
 ## Router :
 
-Pour configurer nos routes, nous avons tout d'abord besoin d'un composant qui
-permettra d'englober notre application pour permettre aux autres pages de l'application
-de pouvoir utiliser les composants Route, Link etc.
+Pour configurer nos routes, nous avons tout d'abord besoin d'un composant qui permettra d'englober notre application pour permettre aux autres pages de l'application de pouvoir utiliser les composants Route, Link etc.
 
+```JavaScript
 ReactDOM.render(
     <BrowserRouter>
         <App />
     </BrowserRouter>,
     document.getElementById('root)
 );
+```
 
 Il faut placer le composant <BrowserRouter> (qui est notre Routeur) le plus haut dans l'application.
 Ici j'ai importé <BrowserRouter> dans index.js (qui est le composant le plus haut), avec lequel j'ai englober le composant <App>
