@@ -32,25 +32,20 @@ ReactDOM.render(
 ```
 
 Il faut placer le composant <BrowserRouter> (qui est notre Routeur) le plus haut dans l'application.
-Ici j'ai importé <BrowserRouter> dans index.js (qui est le composant le plus haut), avec lequel j'ai englober le composant <App>
-qui est le point d'entrée de notre application. Ainsi le composant App et et ses enfants auront accès au éléments Route, Link etc.
+Ici j'ai importé <BrowserRouter> dans index.js (qui est le composant le plus haut), avec lequel j'ai englober le composant <App> qui est le point d'entrée de notre application. Ainsi le composant App et et ses enfants auront accès au éléments Route, Link etc.
 
-Note : un composant Routeur (BrowserRouter) ne peut avoir qu'un seul élément enfant. Cet élément enfant peut-être
-un élément HTML (tel que div) ou un composant React (comme ici avec <App>).
+Note : un composant Routeur (BrowserRouter) ne peut avoir qu'un seul élément enfant. Cet élément enfant peut-être un élément HTML (tel que div) ou un composant React (comme ici avec <App>).
 
 Le code ci-dessus va créé une instance de 'history' (historique) pour l'ensemble de notre composant <App>.
 
 History :
 
 History est une bibliothèque JavaScript qui nous permet de gérer facilement l'historique des sessions partout où JavaScript est exécuté.
-History fourni une API minimale nous permettant de gérer la pile d'historique, de naviguer, de confirmer la navigation et de conserver l'état
-entre les sessions.
+History fourni une API minimale nous permettant de gérer la pile d'historique, de naviguer, de confirmer la navigation et de conserver l'état entre les sessions.
 
-Chaque composant de routeur crée un objet 'history' qui garde la trace de l'emplacement actuel (history.location) et des emplacements précédents dans une pile.
-Lorsque l'emplacement actuel change, la vue est restituée et nous obtenons une impression de navigation.
+Chaque composant de routeur crée un objet 'history' qui garde la trace de l'emplacement actuel (history.location) et des emplacements précédents dans une pile. Lorsque l'emplacement actuel change, la vue est restituée et nous obtenons une impression de navigation.
 
-Comment change l'emplacement actuel ? L'objet 'history possède des méthodes telles que 'history.push()' et 'history.replace()' pour s'en occuper.
-'history.push() est appelé lorsque nous cliquons sur un composant <Link> et 'history.replace()' est appelé lorsque nous utilisons <Redirect>.
+Comment change l'emplacement actuel ? L'objet 'history possède des méthodes telles que 'history.push()' et 'history.replace()' pour s'en occuper. 'history.push() est appelé lorsque nous cliquons sur un composant <Link> et 'history.replace()' est appelé lorsque nous utilisons <Redirect>.
 D'autres méthodes, telles history.goBack() et history.goForward() permettent de naviguer dans l'historique en retournant en arrière ou en avant.
 
 
@@ -104,8 +99,7 @@ Donc quand l'utilisateur clique sur <li><Link to="/category">Category</Link></li
 la Route prend le relais et vérifie si dans son path il y a un '/category', si c'est le cas, il va afficher le composant qui est définini dans component={Category},
 ici si ça correspond c'est le composant Category qui sera afficher.
 
-Dans le composant <App> nous avons déclarer ces routes de bases car c'est le point d'entrée de notre application, ensuite pour chaque sous-routes il faudra les 
-déclarer dans le composant parent de ces sous-routes.
+Dans le composant <App> nous avons déclarer ces routes de bases car c'est le point d'entrée de notre application, ensuite pour chaque sous-routes il faudra les déclarer dans le composant parent de ces sous-routes.
 
 Ici, / correspond à / et /category. Par conséquent ces deux routes seront matcher et rendus. Comment éviter que deux composants ne soient rendu en même temps ?
 Pour cela nous devons passer 'exact = {true}' comme propriété à notre route qui possède le 'path='/''.
