@@ -6,6 +6,7 @@ Fonctionnement des routes avec **React Router DOM** :
 4. Routage protégé
 
 
+
 **React Router basique :**
 
 Ci-dessous un exemple d'une route de base pour une application (sans sous-route)
