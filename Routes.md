@@ -27,8 +27,7 @@ ReactDOM.render(
     <BrowserRouter>
         <App />
     </BrowserRouter>,
-    document.getElementById('root)
-);
+    document.getElementById('root));
 ```
 
 Il faut placer le composant <BrowserRouter> (qui est notre Routeur) le plus haut dans l'application.
