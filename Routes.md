@@ -5,7 +5,7 @@ Fonctionnement des routes avec **React Router DOM** :
 3. Routage imbriqué avec des paramètres de chemin
 4. Routage protégé
 
-**React Router basique :**
+# React Router basique :
 
 Ci-dessous un exemple d'une route de base pour une application (sans sous-route)
 
