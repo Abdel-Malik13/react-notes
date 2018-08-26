@@ -9,12 +9,14 @@ Fonctionnement des routes avec **React Router DOM** :
 
 Ci-dessous un exemple d'une route de base pour une application (sans sous-route)
 
+```JavaScript
 <Router>
     <Route exact path="/" component={Home} />
     <Route path="/category" component={Category} />
     <Route path="/login" component={Login} />
     <Route path="/products" component={Products} />
 </Router>
+```
 
 Router :
 Pour configurer nos routes, nous avons tout d'abord besoin d'un composant qui
