@@ -18,7 +18,7 @@ Ci-dessous un exemple d'une route de base pour une application (sans sous-route)
 </Router>
 ```
 
-Router :
+**Router :**
 Pour configurer nos routes, nous avons tout d'abord besoin d'un composant qui
 permettra d'englober notre application pour permettre aux autres pages de l'application
 de pouvoir utiliser les composants Route, Link etc.
