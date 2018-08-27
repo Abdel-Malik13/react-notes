@@ -54,14 +54,14 @@ D'autres méthodes, telles ``history.goBack()`` et ``history.goForward()`` perme
 
 ## Links et Routes :
 
-Le composant <Route> est le composant le plus important de React router. Il rend certaines interfaces utilisateurs si l'emplacement actuel correspond au chemin (path) de la route.
-Idéalement, un composant <Route> doit avoir une propriété nommée 'path', et si le pathname correspond (match) avec l'emplacement actuel, il est rendu.
+Le composant ``<Route>`` est le composant le plus important de React router. Il rend certaines interfaces utilisateurs si l'emplacement actuel correspond au chemin (path) de la route.
+Idéalement, un composant <Route> doit avoir une propriété nommée ``path``, et si le pathname correspond (match) avec l'emplacement actuel, il est rendu.
 
-Le composant <Link>, d'autre part, permet de naviguer entre les pages. Il est comparable à l'élément d'ancrage HTML (<a>). Cependant, l'utilisation de liens d'ancrage entraînerait une actualisation du navigateur, ce que nous ne souhaitons pas.
-A la place, nous pouvons utiliser <Link> pour naviguer vers une URL particulière et afficher la vue sans actualisation du navigateur.
+Le composant ``<Link>``, d'autre part, permet de naviguer entre les pages. Il est comparable à l'élément d'ancrage HTML (``<a>``). Cependant, l'utilisation de liens d'ancrage entraînerait une actualisation du navigateur, ce que nous ne souhaitons pas.
+A la place, nous pouvons utiliser ``<Link>`` pour naviguer vers une URL particulière et afficher la vue sans actualisation du navigateur.
 
 
-Demo 1 : Routing de base
+### Demo 1 : Routing de base
 
 const Home = () => (
     <div>
