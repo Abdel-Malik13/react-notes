@@ -63,23 +63,28 @@ A la place, nous pouvons utiliser ``<Link>`` pour naviguer vers une URL particul
 
 ### Demo 1 : Routing de base
 
+
+```JavaScript
 const Home = () => (
     <div>
         <h2>Home</h2>
     </div>
 )
-
+```
+```JavaScript
 const Category = () => (
     <div>
         <h2>Category</h2>
     </div>
 )
-
+```
+```JavaScript
 const Products = () => (
     <div>
         <h2>Products</h2>
     </div>
 )
+```
 
 Ici je créer 3 composants d'interface utilisateur, ce nos pages qui seront afficher lorsqu'ils correspondront au path de l'url. Par exemple, si l'url est '/category' alors le composant (la page) Category sera afficher.
 
