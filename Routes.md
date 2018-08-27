@@ -32,7 +32,7 @@ ReactDOM.render(
 ```
 
 Il faut placer le composant ``<BrowserRouter>`` (qui est notre Routeur) le plus haut dans l'application.
-Ici j'ai importé <BrowserRouter> dans index.js (qui est le composant le plus haut), avec lequel j'ai englober le composant <App> qui est le point d'entrée de notre application. Ainsi le composant App et et ses enfants auront accès au éléments Route, Link etc.
+Ici j'ai importé ``<BrowserRouter>`` dans index.js (qui est le composant le plus haut), avec lequel j'ai englober le composant ``<App>`` qui est le point d'entrée de notre application. Ainsi le composant ``App`` et et ses enfants auront accès aux éléments Route, Link etc.
 
 Note : un composant Routeur (BrowserRouter) ne peut avoir qu'un seul élément enfant. Cet élément enfant peut-être un élément HTML (tel que div) ou un composant React (comme ici avec <App>).
 
