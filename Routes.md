@@ -1,3 +1,6 @@
+Traduction approximative et modifications personnelles de l'article suivant: https://www.sitepoint.com/react-router-v4-complete-guide/
+
+
 Fonctionnement des routes avec **React Router DOM** :
 
 1. Routage de navigation de base
