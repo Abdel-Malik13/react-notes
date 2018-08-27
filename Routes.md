@@ -41,18 +41,18 @@ Ici j'ai importé ``<BrowserRouter>`` dans index.js (qui est le composant le plu
 
 Le code ci-dessus va créé une instance de 'history' (historique) pour l'ensemble de notre composant <App>.
 
-History :
+## History :
 
 History est une bibliothèque JavaScript qui nous permet de gérer facilement l'historique des sessions partout où JavaScript est exécuté.
 History fourni une API minimale nous permettant de gérer la pile d'historique, de naviguer, de confirmer la navigation et de conserver l'état entre les sessions.
 
 Chaque composant de routeur crée un objet 'history' qui garde la trace de l'emplacement actuel (history.location) et des emplacements précédents dans une pile. Lorsque l'emplacement actuel change, la vue est restituée et nous obtenons une impression de navigation.
 
-Comment change l'emplacement actuel ? L'objet 'history possède des méthodes telles que 'history.push()' et 'history.replace()' pour s'en occuper. 'history.push() est appelé lorsque nous cliquons sur un composant <Link> et 'history.replace()' est appelé lorsque nous utilisons <Redirect>.
-D'autres méthodes, telles history.goBack() et history.goForward() permettent de naviguer dans l'historique en retournant en arrière ou en avant.
+Comment change l'emplacement actuel ? L'objet 'history' possède des méthodes telles que ``history.push()`` et ``history.replace()`` pour s'en occuper. ``history.push()`` est appelé lorsque nous cliquons sur un composant ``<Link>`` et ``history.replace()`` est appelé lorsque nous utilisons ``<Redirect>``.
+D'autres méthodes, telles ``history.goBack()`` et ``history.goForward()`` permettent de naviguer dans l'historique en retournant en arrière ou en avant.
 
 
-Links et Routes :
+## Links et Routes :
 
 Le composant <Route> est le composant le plus important de React router. Il rend certaines interfaces utilisateurs si l'emplacement actuel correspond au chemin (path) de la route.
 Idéalement, un composant <Route> doit avoir une propriété nommée 'path', et si le pathname correspond (match) avec l'emplacement actuel, il est rendu.
