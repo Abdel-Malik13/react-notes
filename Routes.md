@@ -86,28 +86,31 @@ const Products = () => (
 )
 ```
 
-Ici je créer 3 composants d'interface utilisateur, ce nos pages qui seront afficher lorsqu'ils correspondront au path de l'url. Par exemple, si l'url est '/category' alors le composant (la page) Category sera afficher.
+Ici je créer 3 composants d'interface utilisateur, ce nos pages qui seront afficher lorsqu'ils correspondront au path de l'url. Par exemple, si l'url est ``/category`` alors le composant (la page) Category sera afficher.
 
-Ensuite dans notre application nous avons des url pour naviguer entre les différentes pages, pour faire cela nous avons besoin de <Link>
+Ensuite dans notre application nous avons des url pour naviguer entre les différentes pages, pour faire cela nous avons besoin de ``<Link>``
 
+```JavaScript
 <ul>
     <li><Link to="/">Home</Link></li>
     <li><Link to="/category">Category</Link></li>
     <li><Link to="/products">Products</Link></li>
 </ul>
+```
 
-Ensuite, les composants de route son rendus si la propriété 'path' correspond à l'URL actuelle
+Ensuite, les composants de route son rendus si la propriété ``path`` correspond à l'URL actuelle
 
+```JavaScript
 <Route path="/" component={Home} />
 <Route path="/category" component={Category} />
 <Route path="/products" component={Products} />
+```
 
-En gros, dans notre application nous avons une navigation comme une page HTML standard avec la balise <a> sauf que là c'est <Link>.
-Donc quand l'utilisateur clique sur <li><Link to="/category">Category</Link></li> la barre d'adresse de son navigateur devient monapp.com/category
-la Route prend le relais et vérifie si dans son path il y a un '/category', si c'est le cas, il va afficher le composant qui est définini dans component={Category},
-ici si ça correspond c'est le composant Category qui sera afficher.
+En gros, dans notre application nous avons une navigation comme une page HTML standard avec la balise <a> sauf que là c'est ``<Link>``.
+Donc quand l'utilisateur clique sur ``<li><Link to="/category">Category</Link></li>`` la barre d'adresse de son navigateur devient ``monapp.com/category``
+la Route prend le relais et vérifie si dans son path il y a un ``/category``, si c'est le cas, il va afficher le composant qui est définini dans ``component={Category}``, ici si ça correspond c'est le composant Category qui sera afficher.
 
-Dans le composant <App> nous avons déclarer ces routes de bases car c'est le point d'entrée de notre application, ensuite pour chaque sous-routes il faudra les déclarer dans le composant parent de ces sous-routes.
+Dans le composant ``<App>`` nous avons déclarer ces routes de bases car c'est le point d'entrée de notre application, ensuite pour chaque sous-routes il faudra les déclarer dans le composant parent de ces sous-routes.
 
 Ici, / correspond à / et /category. Par conséquent ces deux routes seront matcher et rendus. Comment éviter que deux composants ne soient rendu en même temps ?
 Pour cela nous devons passer 'exact = {true}' comme propriété à notre route qui possède le 'path='/''.
